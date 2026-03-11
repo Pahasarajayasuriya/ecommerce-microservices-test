@@ -1,0 +1,110 @@
+{
+  "service": "payment-service",
+  "file": ".\\payment-service\\checkoutService.py",
+  "function": "authorize_payment",
+  "lang": "python",
+  "lines": "27-38",
+  "slicing_stats": {
+    "original_tokens": 84,
+    "slice_tokens": 84,
+    "original_lines": 12,
+    "kept_lines": 12,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "slice_preview": "def authorize_payment(card_number, amount, currency):\n    logger.info(f'Authorizing payment of {amount} {currency}')\n    if amount <= 0:\n        raise ValueError('Payment amount must be positive')\n    masked = card_number[-4:]\n    logger.info(f'Card ending in {masked} authorized')\n    return {\n        'authorized': True,\n        'masked_card': masked,\n        'amount': amount,\n        'currency': currency,\n    }",
+  "slice_tokens_preview": [
+    "def",
+    "authorize_payment",
+    "(",
+    "card_number",
+    ",",
+    "amount",
+    ",",
+    "currency",
+    ")",
+    ":",
+    "logger",
+    ".",
+    "info",
+    "(",
+    "f'",
+    "Authorizing payment of ",
+    "{",
+    "amount",
+    "}",
+    " "
+  ],
+  "slice_dfg_preview": [
+    [
+      "logger",
+      10,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "info",
+      12,
+      "computedFrom",
+      [
+        "info"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "amount",
+      17,
+      "computedFrom",
+      [
+        "amount"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "currency",
+      21,
+      "computedFrom",
+      [
+        "currency"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "amount",
+      26,
+      "computedFrom",
+      [
+        "amount"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

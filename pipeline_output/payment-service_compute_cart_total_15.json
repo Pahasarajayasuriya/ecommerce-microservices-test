@@ -1,0 +1,104 @@
+{
+  "service": "payment-service",
+  "file": ".\\payment-service\\checkoutService.py",
+  "function": "compute_cart_total",
+  "lang": "python",
+  "lines": "15-20",
+  "slicing_stats": {
+    "original_tokens": 40,
+    "slice_tokens": 40,
+    "original_lines": 6,
+    "kept_lines": 6,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "slice_preview": "def compute_cart_total(cart_items, tax_rate):\n    subtotal = 0\n    for item in cart_items:\n        subtotal += item['unit_price'] * item['qty']\n    tax_amount = subtotal * tax_rate\n    return subtotal + tax_amount",
+  "slice_tokens_preview": [
+    "def",
+    "compute_cart_total",
+    "(",
+    "cart_items",
+    ",",
+    "tax_rate",
+    ")",
+    ":",
+    "subtotal",
+    "=",
+    "0",
+    "for",
+    "item",
+    "in",
+    "cart_items",
+    ":",
+    "subtotal",
+    "+=",
+    "item",
+    "["
+  ],
+  "slice_dfg_preview": [
+    [
+      "subtotal",
+      8,
+      "computedFrom",
+      [
+        "subtotal"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "item",
+      12,
+      "computedFrom",
+      [
+        "item"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "cart_items",
+      14,
+      "computedFrom",
+      [
+        "cart_items"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "item",
+      18,
+      "computedFrom",
+      [
+        "item"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "item",
+      25,
+      "computedFrom",
+      [
+        "item"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

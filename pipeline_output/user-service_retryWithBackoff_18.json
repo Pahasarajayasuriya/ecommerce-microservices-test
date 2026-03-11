@@ -1,0 +1,120 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\authService.java",
+  "function": "retryWithBackoff",
+  "lang": "java",
+  "lines": "18-39",
+  "slicing_stats": {
+    "original_tokens": 133,
+    "slice_tokens": 133,
+    "original_lines": 22,
+    "kept_lines": 22,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "slice_preview": "    public boolean retryWithBackoff(String tokenId,\n                                     String refreshPayload,\n                                     int maxAttempts) {\n        int tries = 0;\n        int waitMs = 100;\n        while (tries < maxAttempts) {\n            tries += 1;\n            logger.info(\"Token refresh attempt \" + tries +\n                        \" for token \" + tokenId);\n            boolean refreshed = callTokenEndpoint(refreshPayload);\n            if (refreshed) {\n                ",
+  "slice_tokens_preview": [
+    "public",
+    "boolean",
+    "retryWithBackoff",
+    "(",
+    "String",
+    "tokenId",
+    ",",
+    "String",
+    "refreshPayload",
+    ",",
+    "int",
+    "maxAttempts",
+    ")",
+    "{",
+    "int",
+    "tries",
+    "=",
+    "0",
+    ";",
+    "int"
+  ],
+  "slice_dfg_preview": [
+    [
+      "tries",
+      15,
+      "computedFrom",
+      [
+        "tries"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "waitMs",
+      20,
+      "computedFrom",
+      [
+        "waitMs"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "tries",
+      26,
+      "computedFrom",
+      [
+        "tries"
+      ],
+      [
+        15
+      ]
+    ],
+    [
+      "maxAttempts",
+      28,
+      "computedFrom",
+      [
+        "maxAttempts"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "tries",
+      31,
+      "computedFrom",
+      [
+        "tries"
+      ],
+      [
+        15
+      ]
+    ]
+  ]
+}

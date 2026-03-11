@@ -1,0 +1,111 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\userService.js",
+  "function": "paginateResults",
+  "lang": "javascript",
+  "lines": "13-25",
+  "slicing_stats": {
+    "original_tokens": 71,
+    "slice_tokens": 71,
+    "original_lines": 13,
+    "kept_lines": 13,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "slice_preview": "function paginateResults(items, page, pageSize) {\n    const totalCount = items.length;\n    const offset = (page - 1) * pageSize;\n    const pageItems = items.slice(offset, offset + pageSize);\n    const totalPages = Math.ceil(totalCount / pageSize);\n    return {\n        items: pageItems,\n        page,\n        pageSize,\n        totalCount,\n        totalPages,\n    };\n}",
+  "slice_tokens_preview": [
+    "function",
+    "paginateResults",
+    "(",
+    "items",
+    ",",
+    "page",
+    ",",
+    "pageSize",
+    ")",
+    "{",
+    "const",
+    "totalCount",
+    "=",
+    "items",
+    ".",
+    "length",
+    ";",
+    "const",
+    "offset",
+    "="
+  ],
+  "slice_dfg_preview": [
+    [
+      "items",
+      13,
+      "computedFrom",
+      [
+        "items"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "totalCount",
+      11,
+      "computedFrom",
+      [
+        "totalCount"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "page",
+      21,
+      "computedFrom",
+      [
+        "page"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "pageSize",
+      26,
+      "computedFrom",
+      [
+        "pageSize"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "offset",
+      18,
+      "computedFrom",
+      [
+        "offset"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

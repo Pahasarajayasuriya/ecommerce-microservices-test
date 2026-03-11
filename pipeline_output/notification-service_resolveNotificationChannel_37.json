@@ -1,0 +1,114 @@
+{
+  "service": "notification-service",
+  "file": ".\\notification-service\\analyticsService.java",
+  "function": "resolveNotificationChannel",
+  "lang": "java",
+  "lines": "37-52",
+  "slicing_stats": {
+    "original_tokens": 87,
+    "slice_tokens": 87,
+    "original_lines": 16,
+    "kept_lines": 16,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "slice_preview": "    public String resolveNotificationChannel(String eventType,\n                                              String userPreference,\n                                              boolean isUrgent) {\n        if (isUrgent) {\n            return \"SMS\";\n        }\n        if (userPreference != null && !userPreference.isEmpty()) {\n            return userPreference;\n        }\n        switch (eventType) {\n            case \"ORDER_SHIPPED\":    return \"EMAIL\";\n            case \"PAYMENT_FAILED\":  return \"SMS\"",
+  "slice_tokens_preview": [
+    "public",
+    "String",
+    "resolveNotificationChannel",
+    "(",
+    "String",
+    "eventType",
+    ",",
+    "String",
+    "userPreference",
+    ",",
+    "boolean",
+    "isUrgent",
+    ")",
+    "{",
+    "if",
+    "(",
+    "isUrgent",
+    ")",
+    "{",
+    "return"
+  ],
+  "slice_dfg_preview": [
+    [
+      "isUrgent",
+      16,
+      "computedFrom",
+      [
+        "isUrgent"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "userPreference",
+      27,
+      "computedFrom",
+      [
+        "userPreference"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "userPreference",
+      32,
+      "computedFrom",
+      [
+        "userPreference"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "isEmpty",
+      34,
+      "computedFrom",
+      [
+        "isEmpty"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "userPreference",
+      40,
+      "computedFrom",
+      [
+        "userPreference"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

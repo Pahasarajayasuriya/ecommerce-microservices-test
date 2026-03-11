@@ -1,0 +1,139 @@
+{
+  "service": "inventory-service",
+  "file": ".\\inventory-service\\stockService.py",
+  "function": "process_batch_stock_update",
+  "lang": "python",
+  "lines": "84-124",
+  "slicing_stats": {
+    "original_tokens": 254,
+    "slice_tokens": 254,
+    "original_lines": 41,
+    "kept_lines": 41,
+    "dfg_lines_found": 32,
+    "reduction_pct": 0.0,
+    "slicing_applied": true
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "slice_preview": "def process_batch_stock_update(updates, current_inventory):\n    logger.info('Starting batch stock update')\n    logger.debug(f'Processing {len(updates)} updates')\n    logger.debug('Acquiring inventory write lock')\n    logger.debug('Lock acquired')\n    logger.debug('Loading current inventory snapshot')\n    logger.debug('Snapshot loaded')\n    logger.info('Validating all update entries before applying')\n    logger.debug('Pre-validation pass started')\n\n    success_count = 0\n    failure_count = 0\n    ",
+  "slice_tokens_preview": [
+    "def",
+    "process_batch_stock_update",
+    "(",
+    "updates",
+    ",",
+    "current_inventory",
+    ")",
+    ":",
+    "logger",
+    ".",
+    "info",
+    "(",
+    "'",
+    "Starting batch stock update",
+    "'",
+    ")",
+    "logger",
+    ".",
+    "debug",
+    "("
+  ],
+  "slice_dfg_preview": [
+    [
+      "logger",
+      8,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "info",
+      10,
+      "computedFrom",
+      [
+        "info"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      16,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "debug",
+      18,
+      "computedFrom",
+      [
+        "debug"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "len",
+      23,
+      "computedFrom",
+      [
+        "len"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

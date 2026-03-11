@@ -1,0 +1,111 @@
+{
+  "service": "notification-service",
+  "file": ".\\notification-service\\analyticsService.java",
+  "function": "computeWeightedScore",
+  "lang": "java",
+  "lines": "19-31",
+  "slicing_stats": {
+    "original_tokens": 93,
+    "slice_tokens": 93,
+    "original_lines": 13,
+    "kept_lines": 13,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "slice_preview": "    public double computeWeightedScore(List<Map<String, Double>> signals) {\n        double totalScore = 0;\n        double totalWeight = 0;\n        for (Map<String, Double> signal : signals) {\n            totalScore += signal.get(\"value\") * signal.get(\"weight\");\n            totalWeight += signal.get(\"weight\");\n        }\n        if (totalWeight == 0) {\n            return 0;\n        }\n        double weightedScore = totalScore / totalWeight;\n        return weightedScore;\n    }",
+  "slice_tokens_preview": [
+    "public",
+    "double",
+    "computeWeightedScore",
+    "(",
+    "List",
+    "<",
+    "Map",
+    "<",
+    "String",
+    ",",
+    "Double",
+    ">",
+    ">",
+    "signals",
+    ")",
+    "{",
+    "double",
+    "totalScore",
+    "=",
+    "0"
+  ],
+  "slice_dfg_preview": [
+    [
+      "totalScore",
+      17,
+      "computedFrom",
+      [
+        "totalScore"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "totalWeight",
+      22,
+      "computedFrom",
+      [
+        "totalWeight"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "signal",
+      34,
+      "computedFrom",
+      [
+        "signal"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "signals",
+      36,
+      "computedFrom",
+      [
+        "signals"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "signal",
+      41,
+      "computedFrom",
+      [
+        "signal"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

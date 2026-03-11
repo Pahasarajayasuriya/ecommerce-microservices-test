@@ -1,0 +1,103 @@
+{
+  "service": "order-service",
+  "file": ".\\order-service\\orderService.js",
+  "function": "applyDiscountCode",
+  "lang": "javascript",
+  "lines": "27-31",
+  "slicing_stats": {
+    "original_tokens": 30,
+    "slice_tokens": 30,
+    "original_lines": 5,
+    "kept_lines": 5,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "slice_preview": "function applyDiscountCode(originalPrice, discountPercent) {\n    const discountAmount = originalPrice * (discountPercent / 100);\n    const finalPrice = originalPrice - discountAmount;\n    return finalPrice;\n}",
+  "slice_tokens_preview": [
+    "function",
+    "applyDiscountCode",
+    "(",
+    "originalPrice",
+    ",",
+    "discountPercent",
+    ")",
+    "{",
+    "const",
+    "discountAmount",
+    "=",
+    "originalPrice",
+    "*",
+    "(",
+    "discountPercent",
+    "/",
+    "100",
+    ")",
+    ";",
+    "const"
+  ],
+  "slice_dfg_preview": [
+    [
+      "originalPrice",
+      11,
+      "computedFrom",
+      [
+        "originalPrice"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "discountPercent",
+      14,
+      "computedFrom",
+      [
+        "discountPercent"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "discountAmount",
+      9,
+      "computedFrom",
+      [
+        "discountAmount"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "originalPrice",
+      22,
+      "computedFrom",
+      [
+        "originalPrice"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "discountAmount",
+      24,
+      "computedFrom",
+      [
+        "discountAmount"
+      ],
+      [
+        9
+      ]
+    ]
+  ]
+}

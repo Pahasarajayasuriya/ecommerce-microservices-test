@@ -1,0 +1,118 @@
+{
+  "service": "order-service",
+  "file": ".\\order-service\\orderService.js",
+  "function": "transitionOrderStatus",
+  "lang": "javascript",
+  "lines": "63-82",
+  "slicing_stats": {
+    "original_tokens": 145,
+    "slice_tokens": 145,
+    "original_lines": 20,
+    "kept_lines": 20,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "slice_preview": "function transitionOrderStatus(currentStatus, event) {\n    const transitions = {\n        'PENDING':    { 'PAYMENT_RECEIVED': 'CONFIRMED', 'CANCEL': 'CANCELLED' },\n        'CONFIRMED':  { 'SHIPPED': 'SHIPPED',            'CANCEL': 'CANCELLED' },\n        'SHIPPED':    { 'DELIVERED': 'DELIVERED' },\n        'DELIVERED':  {},\n        'CANCELLED':  {},\n    };\n\n    const allowed = transitions[currentStatus];\n    if (!allowed) {\n        throw new Error(`Unknown status: ${currentStatus}`);\n    }\n    cons",
+  "slice_tokens_preview": [
+    "function",
+    "transitionOrderStatus",
+    "(",
+    "currentStatus",
+    ",",
+    "event",
+    ")",
+    "{",
+    "const",
+    "transitions",
+    "=",
+    "{",
+    "'",
+    "PENDING",
+    "'",
+    ":",
+    "{",
+    "'",
+    "PAYMENT_RECEIVED",
+    "'"
+  ],
+  "slice_dfg_preview": [
+    [
+      "transitions",
+      9,
+      "computedFrom",
+      [
+        "transitions"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "transitions",
+      89,
+      "computedFrom",
+      [
+        "transitions"
+      ],
+      [
+        9
+      ]
+    ],
+    [
+      "currentStatus",
+      91,
+      "computedFrom",
+      [
+        "currentStatus"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "allowed",
+      87,
+      "computedFrom",
+      [
+        "allowed"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "allowed",
+      97,
+      "computedFrom",
+      [
+        "allowed"
+      ],
+      [
+        87
+      ]
+    ]
+  ]
+}

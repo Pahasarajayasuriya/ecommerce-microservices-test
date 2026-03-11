@@ -1,0 +1,114 @@
+{
+  "service": "payment-service",
+  "file": ".\\payment-service\\checkoutService.py",
+  "function": "calculate_refund_amount",
+  "lang": "python",
+  "lines": "45-60",
+  "slicing_stats": {
+    "original_tokens": 79,
+    "slice_tokens": 79,
+    "original_lines": 16,
+    "kept_lines": 16,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "slice_preview": "def calculate_refund_amount(original_amount, days_since_purchase, reason):\n    logger.info(f'Calculating refund for amount {original_amount}')\n    if days_since_purchase <= 7:\n        refund_rate = 1.00\n    elif days_since_purchase <= 30:\n        refund_rate = 0.85\n    else:\n        refund_rate = 0.50\n\n    if reason == 'DEFECTIVE':\n        refund_rate = 1.00\n\n    refund_amount = original_amount * refund_rate\n    fee = original_amount - refund_amount\n    logger.info(f'Refund amount: {refund_amoun",
+  "slice_tokens_preview": [
+    "def",
+    "calculate_refund_amount",
+    "(",
+    "original_amount",
+    ",",
+    "days_since_purchase",
+    ",",
+    "reason",
+    ")",
+    ":",
+    "logger",
+    ".",
+    "info",
+    "(",
+    "f'",
+    "Calculating refund for amount ",
+    "{",
+    "original_amount",
+    "}",
+    "'"
+  ],
+  "slice_dfg_preview": [
+    [
+      "logger",
+      10,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "info",
+      12,
+      "computedFrom",
+      [
+        "info"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "original_amount",
+      17,
+      "computedFrom",
+      [
+        "original_amount"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "days_since_purchase",
+      22,
+      "computedFrom",
+      [
+        "days_since_purchase"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "refund_rate",
+      26,
+      "computedFrom",
+      [
+        "refund_rate"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

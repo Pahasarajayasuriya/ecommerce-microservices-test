@@ -1,0 +1,139 @@
+{
+  "service": "notification-service",
+  "file": ".\\notification-service\\analyticsService.java",
+  "function": "dispatchBatchNotifications",
+  "lang": "java",
+  "lines": "98-143",
+  "slicing_stats": {
+    "original_tokens": 330,
+    "slice_tokens": 299,
+    "original_lines": 46,
+    "kept_lines": 41,
+    "dfg_lines_found": 29,
+    "reduction_pct": 9.4,
+    "slicing_applied": true
+  },
+  "kept_lines": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "slice_preview": "\n        logger.info(\"Starting batch notification dispatch\");\n        logger.fine(\"Total notifications to process: \" + notifications.size());\n        logger.fine(\"Loading user opt-out preferences\");\n        logger.fine(\"Opt-out map loaded with \" + userOptOuts.size() + \" entries\");\n        logger.info(\"Beginning dispatch loop\");\n        logger.fine(\"Checking suppression windows before dispatch\");\n\n        int sent = 0;\n        int skipped = 0;\n        int failed = 0;\n\n        for (Map<String, Str",
+  "slice_tokens_preview": [
+    "logger",
+    ".",
+    "info",
+    "(",
+    "\"",
+    "Starting batch notification dispatch",
+    "\"",
+    ")",
+    ";",
+    "logger",
+    ".",
+    "fine",
+    "(",
+    "\"",
+    "Total notifications to process: ",
+    "\"",
+    "+",
+    "notifications",
+    ".",
+    "size"
+  ],
+  "slice_dfg_preview": [
+    [
+      "logger",
+      0,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "info",
+      2,
+      "computedFrom",
+      [
+        "info"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      9,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "fine",
+      11,
+      "computedFrom",
+      [
+        "fine"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "notifications",
+      17,
+      "computedFrom",
+      [
+        "notifications"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

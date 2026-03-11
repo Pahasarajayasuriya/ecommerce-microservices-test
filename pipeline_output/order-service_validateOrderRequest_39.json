@@ -1,0 +1,117 @@
+{
+  "service": "order-service",
+  "file": ".\\order-service\\orderService.js",
+  "function": "validateOrderRequest",
+  "lang": "javascript",
+  "lines": "39-57",
+  "slicing_stats": {
+    "original_tokens": 130,
+    "slice_tokens": 130,
+    "original_lines": 19,
+    "kept_lines": 19,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "slice_preview": "function validateOrderRequest(order) {\n    const errors = [];\n\n    if (!order.customerId || order.customerId === '') {\n        errors.push('customerId is required');\n    }\n    if (!order.items || order.items.length === 0) {\n        errors.push('order must contain at least one item');\n    }\n    if (order.shippingAddress === null || order.shippingAddress === undefined) {\n        errors.push('shippingAddress is required');\n    }\n    if (order.paymentMethod === null || order.paymentMethod === undefi",
+  "slice_tokens_preview": [
+    "function",
+    "validateOrderRequest",
+    "(",
+    "order",
+    ")",
+    "{",
+    "const",
+    "errors",
+    "=",
+    "[",
+    "]",
+    ";",
+    "if",
+    "(",
+    "!",
+    "order",
+    ".",
+    "customerId",
+    "||",
+    "order"
+  ],
+  "slice_dfg_preview": [
+    [
+      "errors",
+      7,
+      "computedFrom",
+      [
+        "errors"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "order",
+      15,
+      "computedFrom",
+      [
+        "order"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "order",
+      19,
+      "computedFrom",
+      [
+        "order"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "errors",
+      27,
+      "computedFrom",
+      [
+        "errors"
+      ],
+      [
+        7
+      ]
+    ],
+    [
+      "order",
+      40,
+      "computedFrom",
+      [
+        "order"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

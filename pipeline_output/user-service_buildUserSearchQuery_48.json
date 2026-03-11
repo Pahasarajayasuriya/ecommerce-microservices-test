@@ -1,0 +1,139 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\userService.js",
+  "function": "buildUserSearchQuery",
+  "lang": "javascript",
+  "lines": "48-88",
+  "slicing_stats": {
+    "original_tokens": 304,
+    "slice_tokens": 304,
+    "original_lines": 41,
+    "kept_lines": 41,
+    "dfg_lines_found": 31,
+    "reduction_pct": 0.0,
+    "slicing_applied": true
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "slice_preview": "function buildUserSearchQuery(filters) {\n    logger.info('Building user search query');\n    logger.debug('Input filters: ' + JSON.stringify(filters));\n    logger.debug('Initialising query builder');\n    logger.debug('Setting default sort order');\n    logger.debug('Applying pagination defaults');\n    logger.debug('Checking filter schema');\n    logger.debug('Filter schema validated');\n    logger.info('Processing individual filter fields');\n\n    const query = {};\n    let filterCount = 0;\n\n    if (f",
+  "slice_tokens_preview": [
+    "function",
+    "buildUserSearchQuery",
+    "(",
+    "filters",
+    ")",
+    "{",
+    "logger",
+    ".",
+    "info",
+    "(",
+    "'",
+    "Building user search query",
+    "'",
+    ")",
+    ";",
+    "logger",
+    ".",
+    "debug",
+    "(",
+    "'"
+  ],
+  "slice_dfg_preview": [
+    [
+      "logger",
+      6,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      15,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "JSON",
+      23,
+      "computedFrom",
+      [
+        "JSON"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "filters",
+      27,
+      "computedFrom",
+      [
+        "filters"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      31,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

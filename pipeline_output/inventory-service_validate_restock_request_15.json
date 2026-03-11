@@ -1,0 +1,112 @@
+{
+  "service": "inventory-service",
+  "file": ".\\inventory-service\\stockService.py",
+  "function": "validate_restock_request",
+  "lang": "python",
+  "lines": "15-28",
+  "slicing_stats": {
+    "original_tokens": 129,
+    "slice_tokens": 129,
+    "original_lines": 14,
+    "kept_lines": 14,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "slice_preview": "def validate_restock_request(request):\n    errors = []\n\n    if not request.get('product_id') or request['product_id'] == '':\n        errors.append('product_id is required')\n    if not request.get('quantity') or request['quantity'] <= 0:\n        errors.append('quantity must be a positive number')\n    if request.get('warehouse_id') is None:\n        errors.append('warehouse_id is required')\n    if request.get('supplier_id') is None:\n        errors.append('supplier_id is required')\n\n    is_valid = l",
+  "slice_tokens_preview": [
+    "def",
+    "validate_restock_request",
+    "(",
+    "request",
+    ")",
+    ":",
+    "errors",
+    "=",
+    "[",
+    "]",
+    "if",
+    "not",
+    "request",
+    ".",
+    "get",
+    "(",
+    "'",
+    "product_id",
+    "'",
+    ")"
+  ],
+  "slice_dfg_preview": [
+    [
+      "errors",
+      6,
+      "computedFrom",
+      [
+        "errors"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "request",
+      12,
+      "computedFrom",
+      [
+        "request"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "get",
+      14,
+      "computedFrom",
+      [
+        "get"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "request",
+      21,
+      "computedFrom",
+      [
+        "request"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "errors",
+      31,
+      "computedFrom",
+      [
+        "errors"
+      ],
+      [
+        6
+      ]
+    ]
+  ]
+}

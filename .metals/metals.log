@@ -1,0 +1,85 @@
+2026.03.07 20:23:11 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.03.07 20:23:14 WARN  no build tool detected in workspace 'D:\Research\e-commerce'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.03.07 20:23:14 WARN  Build server is not auto-connectable.
+2026.03.07 20:23:14 WARN  no build target for: D:\Research\e-commerce\notification-service\analyticsService.java
+2026.03.07 20:23:16 WARN  no build target for: D:\Research\e-commerce\user-service\loyaltyService.java
+2026.03.07 20:23:16 INFO  no build target found for D:\Research\e-commerce\user-service\loyaltyService.java. Using fallback presentation compiler.
+2026.03.07 20:23:19 WARN  Running javac-semanticdb failed for file:///D:/Research/e-commerce/notification-service/analyticsService.java. Output:
+
+2026.03.07 20:23:19 WARN  Running javac-semanticdb failed for file:///D:/Research/e-commerce/user-service/loyaltyService.java. Output:
+
+2026.03.07 20:23:19 INFO  time: code lens generation in 2.98s
+2026.03.07 20:23:21 WARN  no build target for: D:\Research\e-commerce\user-service\authService.java
+2026.03.07 20:23:22 WARN  Running javac-semanticdb failed for file:///D:/Research/e-commerce/user-service/authService.java. Output:
+
+2026.03.07 20:23:22 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:23:33 WARN  no build target for: D:\Research\e-commerce\user-service\loyaltyService.java
+Mar 07, 2026 8:23:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+2026.03.07 20:23:34 WARN  no build target for: D:\Research\e-commerce\user-service\authService.java
+Mar 07, 2026 8:23:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+2026.03.07 20:23:36 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:23:36 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 07, 2026 8:23:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17
+2026.03.07 20:23:37 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 07, 2026 8:23:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+2026.03.07 20:23:39 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 07, 2026 8:23:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+2026.03.07 20:23:39 WARN  no build target for: D:\Research\e-commerce\user-service\authService.java
+2026.03.07 20:23:40 WARN  Running javac-semanticdb failed for file:///D:/Research/e-commerce/user-service/authService.java. Output:
+
+2026.03.07 20:23:39 INFO  Created report: Optional[file:///D:/Research/e-commerce/user-service/authService.java]
+2026.03.07 20:23:39 INFO  QDox parse error in file:///D:/Research/e-commerce/user-service/authService.java (full report at: "D:\Research\e-commerce\.metals\.reports\metals-full\2026-03-07\r_qdox-error_20-23-40-200.md")
+Mar 07, 2026 8:23:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+2026.03.07 20:23:41 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:11 WARN  no build target for: D:\Research\e-commerce\notification-service\analyticsService.java
+2026.03.07 20:25:11 INFO  no build target found for D:\Research\e-commerce\notification-service\analyticsService.java. Using fallback presentation compiler.
+2026.03.07 20:25:13 INFO  no build target found for D:\Research\e-commerce\notification-service\analyticsService.java. Using fallback presentation compiler.
+2026.03.07 20:25:13 INFO  no build target found for D:\Research\e-commerce\notification-service\analyticsService.java. Using fallback presentation compiler.
+2026.03.07 20:25:16 INFO  no build target found for D:\Research\e-commerce\notification-service\analyticsService.java. Using fallback presentation compiler.
+2026.03.07 20:25:16 WARN  no build target for: D:\Research\e-commerce\notification-service\analyticsService.java
+2026.03.07 20:25:24 INFO  time: code lens generation in 7.44s
+2026.03.07 20:25:25 INFO  no build target found for D:\Research\e-commerce\notification-service\analyticsService.java. Using fallback presentation compiler.
+2026.03.07 20:25:35 WARN  no build target for: D:\Research\e-commerce\user-service\loyaltyService.java
+2026.03.07 20:25:36 INFO  no build target found for D:\Research\e-commerce\user-service\loyaltyService.java. Using fallback presentation compiler.
+2026.03.07 20:25:38 INFO  no build target found for D:\Research\e-commerce\user-service\loyaltyService.java. Using fallback presentation compiler.
+2026.03.07 20:25:38 INFO  no build target found for D:\Research\e-commerce\user-service\loyaltyService.java. Using fallback presentation compiler.
+2026.03.07 20:25:38 WARN  Running javac-semanticdb failed for file:///D:/Research/e-commerce/user-service/loyaltyService.java. Output:
+
+2026.03.07 20:25:39 WARN  no build target for: D:\Research\e-commerce\user-service\loyaltyService.java
+2026.03.07 20:25:39 INFO  no build target found for D:\Research\e-commerce\user-service\loyaltyService.java. Using fallback presentation compiler.
+2026.03.07 20:25:40 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:41 WARN  no build target for: D:\Research\e-commerce\user-service\authService.java
+Mar 07, 2026 8:25:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+2026.03.07 20:25:41 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:57 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:57 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 07, 2026 8:25:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+2026.03.07 20:25:57 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:57 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:57 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 07, 2026 8:25:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 68
+2026.03.07 20:25:59 WARN  no build target for: D:\Research\e-commerce\user-service\authService.java
+2026.03.07 20:25:59 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:25:59 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:26:20 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:26:20 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+2026.03.07 20:26:35 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 07, 2026 8:32:11 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.03.07 20:33:13 INFO  no build target found for D:\Research\e-commerce\notification-service\analyticsService.java. Using fallback presentation compiler.
+2026.03.07 20:33:13 INFO  no build target found for D:\Research\e-commerce\user-service\loyaltyService.java. Using fallback presentation compiler.
+2026.03.07 20:33:13 INFO  no build target found for D:\Research\e-commerce\user-service\authService.java. Using fallback presentation compiler.
+Mar 08, 2026 12:27:14 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.03.08 00:27:16 INFO  Shutting down server
+2026.03.08 00:27:16 INFO  Memory monitor stopped
+2026.03.08 00:27:16 INFO  shutting down Metals

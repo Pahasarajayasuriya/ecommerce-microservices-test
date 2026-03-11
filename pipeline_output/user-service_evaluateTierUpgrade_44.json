@@ -1,0 +1,110 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\loyaltyService.java",
+  "function": "evaluateTierUpgrade",
+  "lang": "java",
+  "lines": "44-55",
+  "slicing_stats": {
+    "original_tokens": 81,
+    "slice_tokens": 81,
+    "original_lines": 12,
+    "kept_lines": 12,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "slice_preview": "    public String evaluateTierUpgrade(int currentPoints, String currentTier) {\n        if (currentTier.equals(\"BRONZE\") && currentPoints >= 1000) {\n            return \"SILVER\";\n        }\n        if (currentTier.equals(\"SILVER\") && currentPoints >= 5000) {\n            return \"GOLD\";\n        }\n        if (currentTier.equals(\"GOLD\") && currentPoints >= 20000) {\n            return \"PLATINUM\";\n        }\n        return currentTier;\n    }",
+  "slice_tokens_preview": [
+    "public",
+    "String",
+    "evaluateTierUpgrade",
+    "(",
+    "int",
+    "currentPoints",
+    ",",
+    "String",
+    "currentTier",
+    ")",
+    "{",
+    "if",
+    "(",
+    "currentTier",
+    ".",
+    "equals",
+    "(",
+    "\"",
+    "BRONZE",
+    "\""
+  ],
+  "slice_dfg_preview": [
+    [
+      "currentTier",
+      13,
+      "computedFrom",
+      [
+        "currentTier"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "equals",
+      15,
+      "computedFrom",
+      [
+        "equals"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "currentPoints",
+      22,
+      "computedFrom",
+      [
+        "currentPoints"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "currentTier",
+      35,
+      "computedFrom",
+      [
+        "currentTier"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "equals",
+      37,
+      "computedFrom",
+      [
+        "equals"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

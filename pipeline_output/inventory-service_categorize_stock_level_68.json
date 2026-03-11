@@ -1,0 +1,108 @@
+{
+  "service": "inventory-service",
+  "file": ".\\inventory-service\\stockService.py",
+  "function": "categorize_stock_level",
+  "lang": "python",
+  "lines": "68-77",
+  "slicing_stats": {
+    "original_tokens": 54,
+    "slice_tokens": 54,
+    "original_lines": 10,
+    "kept_lines": 10,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "slice_preview": "def categorize_stock_level(current_stock, reorder_point, max_capacity):\n    if current_stock == 0:\n        return 'OUT_OF_STOCK'\n    if current_stock <= reorder_point:\n        return 'LOW'\n    if current_stock <= reorder_point * 2:\n        return 'MEDIUM'\n    if current_stock >= max_capacity * 0.9:\n        return 'NEAR_FULL'\n    return 'NORMAL'",
+  "slice_tokens_preview": [
+    "def",
+    "categorize_stock_level",
+    "(",
+    "current_stock",
+    ",",
+    "reorder_point",
+    ",",
+    "max_capacity",
+    ")",
+    ":",
+    "if",
+    "current_stock",
+    "==",
+    "0",
+    ":",
+    "return",
+    "'",
+    "OUT_OF_STOCK",
+    "'",
+    "if"
+  ],
+  "slice_dfg_preview": [
+    [
+      "current_stock",
+      11,
+      "computedFrom",
+      [
+        "current_stock"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "current_stock",
+      20,
+      "computedFrom",
+      [
+        "current_stock"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "reorder_point",
+      22,
+      "computedFrom",
+      [
+        "reorder_point"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "current_stock",
+      29,
+      "computedFrom",
+      [
+        "current_stock"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "reorder_point",
+      31,
+      "computedFrom",
+      [
+        "reorder_point"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

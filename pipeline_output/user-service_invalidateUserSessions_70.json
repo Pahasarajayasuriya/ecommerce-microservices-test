@@ -1,0 +1,131 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\authService.java",
+  "function": "invalidateUserSessions",
+  "lang": "java",
+  "lines": "70-104",
+  "slicing_stats": {
+    "original_tokens": 250,
+    "slice_tokens": 242,
+    "original_lines": 35,
+    "kept_lines": 33,
+    "dfg_lines_found": 26,
+    "reduction_pct": 3.2,
+    "slicing_applied": true
+  },
+  "kept_lines": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "slice_preview": "                                        java.util.List<String> sessionIds) {\n        logger.info(\"Starting session invalidation for user: \" + userId);\n        logger.fine(\"Total sessions to invalidate: \" + sessionIds.size());\n        logger.fine(\"Acquiring session store write lock\");\n        logger.fine(\"Write lock acquired\");\n        logger.fine(\"Loading user session index\");\n        logger.fine(\"Session index loaded\");\n        logger.info(\"Beginning session invalidation loop\");\n        logger.",
+  "slice_tokens_preview": [
+    "java",
+    ".",
+    "util",
+    ".",
+    "List",
+    "<",
+    "String",
+    ">",
+    "sessionIds",
+    ")",
+    "{",
+    "logger",
+    ".",
+    "info",
+    "(",
+    "\"",
+    "Starting session invalidation for user: ",
+    "\"",
+    "+",
+    "userId"
+  ],
+  "slice_dfg_preview": [
+    [
+      "sessionIds",
+      8,
+      "computedFrom",
+      [
+        "sessionIds"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      11,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "info",
+      13,
+      "computedFrom",
+      [
+        "info"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "userId",
+      19,
+      "computedFrom",
+      [
+        "userId"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      22,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

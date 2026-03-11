@@ -1,0 +1,110 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\loyaltyService.java",
+  "function": "calculatePointsEarned",
+  "lang": "java",
+  "lines": "27-38",
+  "slicing_stats": {
+    "original_tokens": 91,
+    "slice_tokens": 91,
+    "original_lines": 12,
+    "kept_lines": 12,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "slice_preview": "    public int calculatePointsEarned(double purchaseAmount,\n                                      String memberTier) {\n        double baseRate = 1.0;\n        switch (memberTier) {\n            case \"SILVER\": baseRate = 1.5; break;\n            case \"GOLD\":   baseRate = 2.0; break;\n            case \"PLATINUM\": baseRate = 3.0; break;\n        }\n        int points = (int) Math.floor(purchaseAmount * baseRate);\n        logger.info(\"Points earned: \" + points + \" for tier \" + memberTier);\n        return ",
+  "slice_tokens_preview": [
+    "public",
+    "int",
+    "calculatePointsEarned",
+    "(",
+    "double",
+    "purchaseAmount",
+    ",",
+    "String",
+    "memberTier",
+    ")",
+    "{",
+    "double",
+    "baseRate",
+    "=",
+    "1.0",
+    ";",
+    "switch",
+    "(",
+    "memberTier",
+    ")"
+  ],
+  "slice_dfg_preview": [
+    [
+      "baseRate",
+      12,
+      "computedFrom",
+      [
+        "baseRate"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "memberTier",
+      18,
+      "computedFrom",
+      [
+        "memberTier"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "baseRate",
+      26,
+      "computedFrom",
+      [
+        "baseRate"
+      ],
+      [
+        12
+      ]
+    ],
+    [
+      "baseRate",
+      37,
+      "computedFrom",
+      [
+        "baseRate"
+      ],
+      [
+        26
+      ]
+    ],
+    [
+      "baseRate",
+      48,
+      "computedFrom",
+      [
+        "baseRate"
+      ],
+      [
+        37
+      ]
+    ]
+  ]
+}

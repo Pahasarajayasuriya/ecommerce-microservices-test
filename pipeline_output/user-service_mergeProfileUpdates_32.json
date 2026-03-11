@@ -1,0 +1,108 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\userService.js",
+  "function": "mergeProfileUpdates",
+  "lang": "javascript",
+  "lines": "32-41",
+  "slicing_stats": {
+    "original_tokens": 80,
+    "slice_tokens": 80,
+    "original_lines": 10,
+    "kept_lines": 10,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "slice_preview": "function mergeProfileUpdates(existingProfile, updates) {\n    const merged = Object.assign({}, existingProfile);\n    for (const key of Object.keys(updates)) {\n        if (updates[key] !== null && updates[key] !== undefined) {\n            merged[key] = updates[key];\n        }\n    }\n    merged.updatedAt = new Date().toISOString();\n    return merged;\n}",
+  "slice_tokens_preview": [
+    "function",
+    "mergeProfileUpdates",
+    "(",
+    "existingProfile",
+    ",",
+    "updates",
+    ")",
+    "{",
+    "const",
+    "merged",
+    "=",
+    "Object",
+    ".",
+    "assign",
+    "(",
+    "{",
+    "}",
+    ",",
+    "existingProfile",
+    ")"
+  ],
+  "slice_dfg_preview": [
+    [
+      "Object",
+      11,
+      "computedFrom",
+      [
+        "Object"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "existingProfile",
+      18,
+      "computedFrom",
+      [
+        "existingProfile"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "merged",
+      9,
+      "computedFrom",
+      [
+        "merged"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "key",
+      24,
+      "computedFrom",
+      [
+        "key"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "Object",
+      26,
+      "computedFrom",
+      [
+        "Object"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

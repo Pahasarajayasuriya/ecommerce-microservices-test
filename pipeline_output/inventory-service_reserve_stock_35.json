@@ -1,0 +1,107 @@
+{
+  "service": "inventory-service",
+  "file": ".\\inventory-service\\stockService.py",
+  "function": "reserve_stock",
+  "lang": "python",
+  "lines": "35-43",
+  "slicing_stats": {
+    "original_tokens": 92,
+    "slice_tokens": 92,
+    "original_lines": 9,
+    "kept_lines": 9,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "slice_preview": "def reserve_stock(product_id, requested_qty, current_stock, reserved_stock):\n    logger.info(f'Reserving {requested_qty} units of {product_id}')\n    available = current_stock - reserved_stock\n    if available < requested_qty:\n        logger.warning(f'Insufficient stock: available={available}')\n        return {'success': False, 'available': available}\n    new_reserved = reserved_stock + requested_qty\n    logger.info(f'Reserved successfully. New reserved: {new_reserved}')\n    return {'success': Tr",
+  "slice_tokens_preview": [
+    "def",
+    "reserve_stock",
+    "(",
+    "product_id",
+    ",",
+    "requested_qty",
+    ",",
+    "current_stock",
+    ",",
+    "reserved_stock",
+    ")",
+    ":",
+    "logger",
+    ".",
+    "info",
+    "(",
+    "f'",
+    "Reserving ",
+    "{",
+    "requested_qty"
+  ],
+  "slice_dfg_preview": [
+    [
+      "logger",
+      12,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "info",
+      14,
+      "computedFrom",
+      [
+        "info"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "requested_qty",
+      19,
+      "computedFrom",
+      [
+        "requested_qty"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "product_id",
+      23,
+      "computedFrom",
+      [
+        "product_id"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "current_stock",
+      29,
+      "computedFrom",
+      [
+        "current_stock"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

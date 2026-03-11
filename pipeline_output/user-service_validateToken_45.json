@@ -1,0 +1,118 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\authService.java",
+  "function": "validateToken",
+  "lang": "java",
+  "lines": "45-64",
+  "slicing_stats": {
+    "original_tokens": 123,
+    "slice_tokens": 123,
+    "original_lines": 20,
+    "kept_lines": 20,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "slice_preview": "    public boolean validateToken(String token,\n                                  String secret,\n                                  long currentTimestamp) {\n        if (token == null || token.isEmpty()) {\n            logger.warning(\"Null or empty token received\");\n            return false;\n        }\n        String[] parts = token.split(\"\\\\.\");\n        if (parts.length != 3) {\n            logger.warning(\"Malformed token: wrong segment count\");\n            return false;\n        }\n        long expiry",
+  "slice_tokens_preview": [
+    "public",
+    "boolean",
+    "validateToken",
+    "(",
+    "String",
+    "token",
+    ",",
+    "String",
+    "secret",
+    ",",
+    "long",
+    "currentTimestamp",
+    ")",
+    "{",
+    "if",
+    "(",
+    "token",
+    "==",
+    "null",
+    "||"
+  ],
+  "slice_dfg_preview": [
+    [
+      "token",
+      16,
+      "computedFrom",
+      [
+        "token"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "token",
+      20,
+      "computedFrom",
+      [
+        "token"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "isEmpty",
+      22,
+      "computedFrom",
+      [
+        "isEmpty"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "logger",
+      27,
+      "computedFrom",
+      [
+        "logger"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "warning",
+      29,
+      "computedFrom",
+      [
+        "warning"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

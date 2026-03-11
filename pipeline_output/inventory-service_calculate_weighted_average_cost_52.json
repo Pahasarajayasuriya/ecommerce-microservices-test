@@ -1,0 +1,108 @@
+{
+  "service": "inventory-service",
+  "file": ".\\inventory-service\\stockService.py",
+  "function": "calculate_weighted_average_cost",
+  "lang": "python",
+  "lines": "52-61",
+  "slicing_stats": {
+    "original_tokens": 54,
+    "slice_tokens": 54,
+    "original_lines": 10,
+    "kept_lines": 10,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "slice_preview": "def calculate_weighted_average_cost(purchases):\n    total_cost = 0\n    total_quantity = 0\n    for purchase in purchases:\n        total_cost += purchase['unit_cost'] * purchase['quantity']\n        total_quantity += purchase['quantity']\n    if total_quantity == 0:\n        return 0\n    weighted_avg = total_cost / total_quantity\n    return weighted_avg",
+  "slice_tokens_preview": [
+    "def",
+    "calculate_weighted_average_cost",
+    "(",
+    "purchases",
+    ")",
+    ":",
+    "total_cost",
+    "=",
+    "0",
+    "total_quantity",
+    "=",
+    "0",
+    "for",
+    "purchase",
+    "in",
+    "purchases",
+    ":",
+    "total_cost",
+    "+=",
+    "purchase"
+  ],
+  "slice_dfg_preview": [
+    [
+      "total_cost",
+      6,
+      "computedFrom",
+      [
+        "total_cost"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "total_quantity",
+      9,
+      "computedFrom",
+      [
+        "total_quantity"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "purchase",
+      13,
+      "computedFrom",
+      [
+        "purchase"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "purchases",
+      15,
+      "computedFrom",
+      [
+        "purchases"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "purchase",
+      19,
+      "computedFrom",
+      [
+        "purchase"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

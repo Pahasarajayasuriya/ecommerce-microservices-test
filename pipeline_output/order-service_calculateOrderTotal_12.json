@@ -1,0 +1,106 @@
+{
+  "service": "order-service",
+  "file": ".\\order-service\\orderService.js",
+  "function": "calculateOrderTotal",
+  "lang": "javascript",
+  "lines": "12-19",
+  "slicing_stats": {
+    "original_tokens": 45,
+    "slice_tokens": 45,
+    "original_lines": 8,
+    "kept_lines": 8,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "slice_preview": "function calculateOrderTotal(orderItems, taxRate) {\n    let subtotal = 0;\n    for (const item of orderItems) {\n        subtotal += item.price * item.quantity;\n    }\n    const tax = subtotal * taxRate;\n    return subtotal + tax;\n}",
+  "slice_tokens_preview": [
+    "function",
+    "calculateOrderTotal",
+    "(",
+    "orderItems",
+    ",",
+    "taxRate",
+    ")",
+    "{",
+    "let",
+    "subtotal",
+    "=",
+    "0",
+    ";",
+    "for",
+    "(",
+    "const",
+    "item",
+    "of",
+    "orderItems",
+    ")"
+  ],
+  "slice_dfg_preview": [
+    [
+      "subtotal",
+      9,
+      "computedFrom",
+      [
+        "subtotal"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "item",
+      16,
+      "computedFrom",
+      [
+        "item"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "orderItems",
+      18,
+      "computedFrom",
+      [
+        "orderItems"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "item",
+      23,
+      "computedFrom",
+      [
+        "item"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "item",
+      27,
+      "computedFrom",
+      [
+        "item"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

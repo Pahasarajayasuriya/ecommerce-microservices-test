@@ -1,0 +1,110 @@
+{
+  "service": "payment-service",
+  "file": ".\\payment-service\\checkoutService.py",
+  "function": "get_transaction_page",
+  "lang": "python",
+  "lines": "69-80",
+  "slicing_stats": {
+    "original_tokens": 79,
+    "slice_tokens": 79,
+    "original_lines": 12,
+    "kept_lines": 12,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "slice_preview": "def get_transaction_page(transactions, page, page_size):\n    total_count = len(transactions)\n    offset = (page - 1) * page_size\n    page_items = transactions[offset: offset + page_size]\n    total_pages = (total_count + page_size - 1) // page_size\n    return {\n        'items': page_items,\n        'page': page,\n        'page_size': page_size,\n        'total_count': total_count,\n        'total_pages': total_pages,\n    }",
+  "slice_tokens_preview": [
+    "def",
+    "get_transaction_page",
+    "(",
+    "transactions",
+    ",",
+    "page",
+    ",",
+    "page_size",
+    ")",
+    ":",
+    "total_count",
+    "=",
+    "len",
+    "(",
+    "transactions",
+    ")",
+    "offset",
+    "=",
+    "(",
+    "page"
+  ],
+  "slice_dfg_preview": [
+    [
+      "len",
+      12,
+      "computedFrom",
+      [
+        "len"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "transactions",
+      14,
+      "computedFrom",
+      [
+        "transactions"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "total_count",
+      10,
+      "computedFrom",
+      [
+        "total_count"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "page",
+      19,
+      "computedFrom",
+      [
+        "page"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "page_size",
+      24,
+      "computedFrom",
+      [
+        "page_size"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

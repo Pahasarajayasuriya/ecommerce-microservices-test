@@ -1,0 +1,104 @@
+{
+  "service": "notification-service",
+  "file": ".\\notification-service\\analyticsService.java",
+  "function": "isWithinSuppressionWindow",
+  "lang": "java",
+  "lines": "87-92",
+  "slicing_stats": {
+    "original_tokens": 27,
+    "slice_tokens": 27,
+    "original_lines": 6,
+    "kept_lines": 6,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "slice_preview": "    public boolean isWithinSuppressionWindow(long lastSentTimestamp,\n                                              long currentTimestamp,\n                                              long windowMs) {\n        long elapsed = currentTimestamp - lastSentTimestamp;\n        return elapsed < windowMs;\n    }",
+  "slice_tokens_preview": [
+    "public",
+    "boolean",
+    "isWithinSuppressionWindow",
+    "(",
+    "long",
+    "lastSentTimestamp",
+    ",",
+    "long",
+    "currentTimestamp",
+    ",",
+    "long",
+    "windowMs",
+    ")",
+    "{",
+    "long",
+    "elapsed",
+    "=",
+    "currentTimestamp",
+    "-",
+    "lastSentTimestamp"
+  ],
+  "slice_dfg_preview": [
+    [
+      "currentTimestamp",
+      17,
+      "computedFrom",
+      [
+        "currentTimestamp"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "lastSentTimestamp",
+      19,
+      "computedFrom",
+      [
+        "lastSentTimestamp"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "elapsed",
+      15,
+      "computedFrom",
+      [
+        "elapsed"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "elapsed",
+      22,
+      "computedFrom",
+      [
+        "elapsed"
+      ],
+      [
+        15
+      ]
+    ],
+    [
+      "windowMs",
+      24,
+      "computedFrom",
+      [
+        "windowMs"
+      ],
+      [
+        -1
+      ]
+    ]
+  ]
+}

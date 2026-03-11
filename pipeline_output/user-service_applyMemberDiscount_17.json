@@ -1,0 +1,103 @@
+{
+  "service": "user-service",
+  "file": ".\\user-service\\loyaltyService.java",
+  "function": "applyMemberDiscount",
+  "lang": "java",
+  "lines": "17-21",
+  "slicing_stats": {
+    "original_tokens": 33,
+    "slice_tokens": 33,
+    "original_lines": 5,
+    "kept_lines": 5,
+    "dfg_lines_found": 0,
+    "reduction_pct": 0.0,
+    "slicing_applied": false
+  },
+  "kept_lines": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "slice_preview": "    public double applyMemberDiscount(double basePrice, double memberDiscountPct) {\n        double savings = basePrice * (memberDiscountPct / 100.0);\n        double discountedPrice = basePrice - savings;\n        return discountedPrice;\n    }",
+  "slice_tokens_preview": [
+    "public",
+    "double",
+    "applyMemberDiscount",
+    "(",
+    "double",
+    "basePrice",
+    ",",
+    "double",
+    "memberDiscountPct",
+    ")",
+    "{",
+    "double",
+    "savings",
+    "=",
+    "basePrice",
+    "*",
+    "(",
+    "memberDiscountPct",
+    "/",
+    "100.0"
+  ],
+  "slice_dfg_preview": [
+    [
+      "basePrice",
+      14,
+      "computedFrom",
+      [
+        "basePrice"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "memberDiscountPct",
+      17,
+      "computedFrom",
+      [
+        "memberDiscountPct"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "savings",
+      12,
+      "computedFrom",
+      [
+        "savings"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "basePrice",
+      25,
+      "computedFrom",
+      [
+        "basePrice"
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      "savings",
+      27,
+      "computedFrom",
+      [
+        "savings"
+      ],
+      [
+        12
+      ]
+    ]
+  ]
+}
