@@ -2,3 +2,4 @@
 .vscode
 
 clone_report.json
+embeddings.pkl
